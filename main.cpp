@@ -6,7 +6,7 @@ Game *game = nullptr;
 
 int main(int argc, const char* argv[]){
     game = new Game();
-    game->init("Game cua nam", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, true);
+    game->init("Game cua nam", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, false);
     while(game->running()){
         game->eventHandle();
         game->update();
